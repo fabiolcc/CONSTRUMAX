@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Construmax - Sua Construtora de Confiança</title>
+  <!-- Importando Bootstrap e Google Fonts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f8f9fa;
+    }
+    /* Definindo cores personalizadas */
+    .primary-color {
+      background-color: #ffc107; /* Amarelo */
+    }
+    .secondary-color {
+      background-color: #ffca2c;
+    }
+    .footer {
+      background-color: #343a40;
+      color: white;
+      padding: 20px 0;
+    }
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      border-radius: 50%;
+      padding: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      color: white;
+      font-size: 24px;
+      text-align: center;
+    }
+    .whatsapp-btn:hover {
+      background-color: #128c7e;
+    }
+    /* Efeitos e Animações */
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #343a40;
+    }
+    .section-description {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+
+    /* Navbar */
+    .navbar {
+      padding: 0.5rem 1rem; /* Reduzindo o padding superior e inferior */
+      background-color: #ffc107; /* Amarelo da navbar */
+    }
+    .navbar .navbar-brand img {
+      width: 120px; /* Tamanho menor da logo */
+    }
+    .navbar .navbar-nav .nav-link {
+      font-size: 0.9rem; /* Reduzindo o tamanho da fonte dos links */
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light primary-color py-3">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="logo.png" alt="Logo Construmax" style="width: 120px;">
+      </a>
+    </div>
+  </nav>
+
+  <!-- Quem Somos -->
+  <section id="quem-somos" class="container py-5 fade-in">
+    <div class="row">
+      <div class="col-lg-6">
+        <h2 class="section-title">Quem Somos</h2>
+        <p class="section-description">A Construmax é uma construtora de excelência, especializada em entregar qualidade e inovação. Atuamos no mercado com produtos que atendem a todas as necessidades do setor da construção civil.</p>
+      </div>
+      <div class="col-lg-6">
+        <img src="loja.jpg".jpg" alt="Imagem Construmax" class="img-fluid rounded shadow">
+      </div>
+    </div>
+  </section>
+
+  <!-- Produtos -->
+  <section id="produtos" class="container py-5 fade-in">
+    <h2 class="section-title">Nossos Produtos</h2>
+    <p class="section-description">Conheça os nossos produtos de qualidade que são referência no mercado.</p>
+    <div class="row">
+      <!-- Produto 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card product-card">
+          <img src="cimentos.png" alt="Produto 1">
+          <div class="card-body">
+            <h5 class="card-title">Produto 1</h5>
+            <p class="card-text">Os melhores cimentos para a qualidade e eficiência da sua obra.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Produto 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card product-card">
+          <img src="areia.jpg" alt="Produto 2">
+          <div class="card-body">
+            <h5 class="card-title">Produto 2</h5>
+            <p class="card-text">Qualidade em areias.Temos variedades em areias para sua construão</p>
+          </div>
+        </div>
+      </div>
+      <!-- Produto 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card product-card">
+          <img src="ferramentas.jpg" alt="Produto 3">
+          <div class="card-body">
+            <h5 class="card-title">Produto 3</h5>
+            <p class="card-text">Ferramentas variadas na qualidade e preco qie cabem no seu bolso.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fale com um Representante -->
+  <section id="contato" class="container py-5 fade-in">
+    <h2 class="section-title">Fale com um Representante</h2>
+    <p class="section-description">Estamos aqui para responder suas dúvidas e oferecer mais informações. Entre em contato com um de nossos representantes!</p>
+    <form>
+      <div class="mb-3">
+        <label for="nome" class="form-label">Nome</label>
+        <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Seu email">
+      </div>
+      <div class="mb-3">
+        <label for="mensagem" class="form-label">Mensagem</label>
+        <textarea class="form-control" id="mensagem" rows="4" placeholder="Sua mensagem"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary secondary-color">Enviar</button>
+    </form>
+  </section>
+
+  <!-- WhatsApp Button (para design) -->
+  <div class="whatsapp-btn">
+    <i class="fab fa-whatsapp"></i>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <p>&copy; 2024 Construmax - Todos os direitos reservados</p>
+  </footer>
+
+  <!-- Scripts (Bootstrap e FontAwesome para o WhatsApp) -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
